@@ -34,3 +34,25 @@ function hotelCost(day) {
     }
     return hotelCharge;
 };
+
+
+
+
+
+//problem solving megaFriend //
+
+function megaFriend(myFriends){
+
+    var longestName = myFriends[0];
+
+    for( var i = 0; i < myFriends.length; i++){
+        var element = myFriends[i];
+        if(element.length > longestName.length){
+            longestName = element;
+        }
+    }
+    return longestName;
+};
+var myFriends = ['nafiz', 'omar', 'abdullah', 'usama', 'mahbub'];
+var result = megaFriend(myFriends);
+
